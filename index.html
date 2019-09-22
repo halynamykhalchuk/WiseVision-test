@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="form-group d-flex">
+    <input class="form-control ml-2 mt-2" type="text" style="width: 50%" placeholder="Enter search parameters" id="search">
+    <button class="btn btn-outline-secondary mt-2 ml-2" id="get" onclick="get()">Get</button>
+    <button class="btn btn-outline-primary mt-2 ml-2" id="reload" onclick="reload()">Reload</button>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Repo ID</th>
+        <th scope="col">Owner ID</th>
+        <th scope="col">URL</th>
+        <th scope="col">Add to ♥</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
